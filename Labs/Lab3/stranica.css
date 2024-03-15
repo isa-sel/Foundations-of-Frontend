@@ -1,0 +1,59 @@
+body{
+    margin-left: 100px;
+    margin-right: 100px;
+    font-family:  serif;
+}
+.header{
+    background-color: #f9e6d9;
+    display: flex;
+    height: 400px;
+    justify-content: space-between;
+}
+h1{
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-bottom: 100px;
+    font-size: 140px;
+    text-align: center;
+}
+.logo{
+    height: 100px;
+    margin-top: 30px;
+    margin-left: 30px;
+    
+}
+.gornji{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+
+.katalog{
+    background-color: rgb(245, 245, 235);
+    display: flex;
+    justify-content: space-between ;
+    align-items: center;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 20px;
+}
+.donji{
+    font-size: 30px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.footer{
+    
+    background-color: #f9e6d9;
+    height: 200px;
+    text-align: center;
+    font-size: 15px;
+    
+}
+.beauty{
+    padding-top: 0.05px;
+    font-size: 30px;
+}
+.stranica{
+    font-weight: bolder;
+}
