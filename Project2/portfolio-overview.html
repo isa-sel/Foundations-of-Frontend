@@ -13,10 +13,33 @@
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
     <link rel="stylesheet" href="lightbox.css">
+    <link href="css/dark-mode.css" rel="stylesheet" />
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+        }
+        main {
+            flex: 1;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+        }
+        .gallery a {
+            display: block;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+    </style>
 </head>
-<body class="d-flex flex-column h-100">
-<main class="flex-shrink-0">
-    <!-- Navigation-->
+<body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container px-5">
             <a class="navbar-brand" href="index.html">Start Bootstrap</a>
@@ -26,7 +49,6 @@
                     <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
                     <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-                    <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
                     <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" id="navbarDropdownBlog" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Blog</a>
@@ -44,74 +66,71 @@
                     </li>
                 </ul>
             </div>
+            <button id="darkModeToggle" class="btn btn-outline-light ms-2">Dark Mode</button>
         </div>
     </nav>
-    <!-- Page Content-->
-    
-            <div class="text-center mb-5">
-                <h1 class="fw-bolder">Our Work</h1>
-                <p class="lead fw-normal text-muted mb-0">Company portfolio</p>
-            </div>
 
-            <div class="container">
-                <div class="gallery">
-                    <a href="images/ker.jpg" data-lightbox="Our Clients" data-tytle="caption1">
-                        <img src="images/ker.jpg">
-                    </a>
-                    
-                    <a href="img/s2.png" data-lightbox="Our Clients" data-tytle="caption2">
-                        <img src="img/s2.png">
-                    </a>
+    <main class="flex-shrink-0">
+        <div class="text-center mb-5">
+            <h1 class="fw-bolder">Our Work</h1>
+            <p class="lead fw-normal text-muted mb-0">Company portfolio</p>
+        </div>
+        <div class="container">
+            <div class="gallery">
+                <a href="images/ker.jpg" data-lightbox="Our Clients" data-title="caption1">
+                    <img src="images/ker.jpg">
+                </a>
+                <a href="images/ker.jpg" data-lightbox="Our Clients" data-title="caption2">
+                    <img src="images/ker.jpg">
+                </a>
+                <a href="images/ker.jpg" data-lightbox="Our Clients" data-title="caption3">
+                    <img src="images/ker.jpg">
+                </a>
+                <a href="images/ker.jpg" data-lightbox="Our Clients" data-title="caption4">
+                    <img src="images/ker.jpg">
+                </a>
+                <a href="images/ker.jpg" data-lightbox="Our Clients" data-title="caption5">
+                    <img src="images/ker.jpg">
+                </a>
+                <a href="images/ker.jpg" data-lightbox="Our Clients" data-title="caption6">
+                    <img src="images/ker.jpg">
+                </a>
 
-                    <a href="img/s3.png" data-lightbox="Our Clients" data-tytle="caption3">
-                        <img src="img/s3.png">
-                    </a>
-
-                    <a href="img/s4.png" data-lightbox="Our Clients" data-tytle="caption4">
-                        <img src="img/s4.png">
-                    </a>
-
-                    <a href="img/s5.png" data-lightbox="Our Clients" data-tytle="caption5">
-                        <img src="img/s5.png">
-                    </a>
-
-                    <a href="img/s6.png" data-lightbox="Our Clients" data-tytle="caption6">
-                        <img src="img/s6.png">
-                    </a>
-
-                    <a href="img/s7.png" data-lightbox="Our Clients" data-tytle="caption7">
-                        <img src="img/s7.png">
-                    </a>
-
-                    <a href="img/s8.png" data-lightbox="Our Clients" data-tytle="caption8">
-                        <img src="img/s8.png">
-                    </a>
-                    
-                </div>
-            </div>
-            
-    
-<!-- Footer-->
-<footer class="bg-dark py-4 mt-auto">
-    <div class="container px-5">
-        <div class="row align-items-center justify-content-between flex-column flex-sm-row">
-            <div class="col-auto"><div class="small m-0 text-white">Copyright &copy; Your Website 2023</div></div>
-            <div class="col-auto">
-                <a class="link-light small" href="#!">Privacy</a>
-                <span class="text-white mx-1">&middot;</span>
-                <a class="link-light small" href="#!">Terms</a>
-                <span class="text-white mx-1">&middot;</span>
-                <a class="link-light small" href="#!">Contact</a>
             </div>
         </div>
-    </div>
-</footer>
-<!-- Bootstrap core JS-->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-<!-- jQuery -->
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<!-- Core theme JS-->
-<script src="js/scripts.js"></script>
-<script src="lightbox-plus-jquery.js"></script>
+    </main>
+            
+    <footer class="bg-dark py-4 mt-auto">
+        <div class="container px-5">
+            <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+                <div class="col-auto"><div class="small m-0 text-white">Copyright &copy; Your Website 2024</div></div>
+                <div class="col-auto">
+                    <a class="link-light small" href="#!">Privacy</a>
+                    <span class="text-white mx-1">&middot;</span>
+                    <a class="link-light small" href="#!">Terms</a>
+                    <span class="text-white mx-1">&middot;</span>
+                    <a class="link-light small" href="#!">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- jQuery 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>-->
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+    <script src="lightbox-plus-jquery.js" defer></script>
+    <script>
+        document.getElementById('darkModeToggle').addEventListener('click', function() {
+            document.body.classList.toggle('dark-mode');
+            if (document.body.classList.contains('dark-mode')) {
+                this.textContent = 'Light Mode';
+            } else {
+                this.textContent = 'Dark Mode';
+            }
+        });
+    </script>
 </body>
 </html>

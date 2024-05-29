@@ -100,6 +100,60 @@ body {
 
 
 
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+}
+
+.accordion {
+    width: 80%;
+    margin: 20px auto;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.accordion-item {
+    border-bottom: 1px solid #ddd;
+}
+
+.accordion-header {
+    background-color: #f1f1f1;
+    cursor: pointer;
+    padding: 10px 15px;
+    text-align: left;
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.accordion-header:hover {
+    background-color: #ddd;
+}
+
+.accordion-content {
+    display: none;
+    padding: 15px;
+    background-color: #fafafa;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -117,24 +171,26 @@ footer {
 
 
 .container{
-  width: 100%;
-  min-width: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  
   padding: 50px 8%;
 
 }
-.gallery{
-  display:grid;
-  grid-template-columns: repeat(auto-fit, minmax(255px,1fr));
-  grid-gap: 30px;
-
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 2fr));
+  gap: 20px;
 }
 
-.gallery img{
-  width:100%;
+.gallery a {
+  display: block;
 }
+
+.gallery img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 
 /* Custom styles for the contact form */
 .contact-container {
@@ -381,9 +437,7 @@ strong {
   font-weight: bolder;
 }
 
-small, .small {
-  font-size: 0.875em;
-}
+
 
 mark, .mark {
   padding: 0.1875em;
@@ -8116,17 +8170,13 @@ textarea.form-control-lg {
   font-weight: 400 !important;
 }
 
-.fw-bold {
-  font-weight: 700 !important;
-}
+
 
 .fw-semibold {
   font-weight: 600 !important;
 }
 
-.fw-bolder {
-  font-weight: bolder !important;
-}
+
 
 .lh-1 {
   line-height: 1 !important;
@@ -8153,6 +8203,7 @@ textarea.form-control-lg {
 }
 
 .text-center {
+  padding-top: 30px;
   text-align: center !important;
 }
 
@@ -8250,10 +8301,7 @@ textarea.form-control-lg {
   color: rgba(var(--bs-body-color-rgb), var(--bs-text-opacity)) !important;
 }
 
-.text-muted {
-  --bs-text-opacity: 1;
-  color: #6c757d !important;
-}
+
 
 .text-black-50 {
   --bs-text-opacity: 1;
@@ -8424,9 +8472,7 @@ textarea.form-control-lg {
   border-radius: var(--bs-border-radius-2xl) !important;
 }
 
-.rounded-circle {
-  border-radius: 50% !important;
-}
+
 
 .rounded-pill {
   border-radius: var(--bs-border-radius-pill) !important;

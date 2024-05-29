@@ -1,4 +1,4 @@
-
+/* General Dark Mode Styles */
 body.dark-mode {
     background-color: #121212;
     color: #ffffff;
@@ -36,7 +36,6 @@ body.dark-mode .btn-outline-light:hover {
     color: #121212;
 }
 
-
 body.dark-mode h1,
 body.dark-mode h2,
 body.dark-mode h3,
@@ -46,11 +45,9 @@ body.dark-mode h6 {
     color: #ffffff;
 }
 
-
 body.dark-mode p {
     color: #ffffff;
 }
-
 
 body.dark-mode a {
     color: #ffffff;
@@ -79,3 +76,68 @@ body.dark-mode .dropdown-menu.dropdown-menu-end .dropdown-item {
 body.dark-mode .dropdown-menu.dropdown-menu-end .dropdown-item:hover {
     background-color: #495057; 
 }
+
+/* Accordion Dark Mode Styles */
+body.dark-mode .accordion-item {
+    background-color: #1c1c1c; /* Background color for accordion item */
+    color: #ffffff;
+    border-color: #333; /* Border color for accordion item */
+    outline: 1px solid #444; /* Outline color for accordion item */
+}
+
+body.dark-mode .accordion-button {
+    background-color: #1c1c1c; /* Background color for accordion button */
+    color: #ffffff;
+    border: none; /* Remove any default border */
+    outline: 1px solid #444; /* Outline color for accordion button */
+}
+
+body.dark-mode .accordion-button:not(.collapsed) {
+    background-color: #333; /* Background color for accordion button when expanded */
+    color: #ffffff;
+    box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.125);
+    outline: 1px solid #555; /* Outline color for expanded accordion button */
+}
+
+body.dark-mode .accordion-body {
+    background-color: #1c1c1c; /* Background color for accordion body */
+    color: #ffffff;
+    outline: 1px solid #444; /* Outline color for accordion body */
+}
+
+/* Additional styles to ensure all parts are covered */
+body.dark-mode .accordion {
+    background-color: #1c1c1c; /* Background color for entire accordion */
+    outline: 1px solid #444; /* Outline color for entire accordion */
+}
+
+body.dark-mode .accordion-header {
+    background-color: #1c1c1c; /* Background color for accordion header */
+    color: #ffffff;
+    outline: 1px solid #444; /* Outline color for accordion header */
+}
+
+body.dark-mode .accordion-item:before {
+    background-color: #1c1c1c; /* Background color for any pseudo-elements */
+}
+
+body.dark-mode .accordion-item .accordion-collapse {
+    background-color: #1c1c1c; /* Background color for the collapsed part */
+    color: #ffffff;
+    outline: 1px solid #444; /* Outline color for the collapsed part */
+}
+
+body.dark-mode .accordion-item .accordion-collapse .accordion-body {
+    background-color: #1c1c1c; /* Background color for the body inside collapse */
+    color: #ffffff;
+    outline: 1px solid #444; /* Outline color for the body inside collapse */
+}
+
+
+
+
+
+
+
+
+
